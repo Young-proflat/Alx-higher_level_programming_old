@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-f"{98} Battery street "
+print(f'{number:d},Battery Street)
