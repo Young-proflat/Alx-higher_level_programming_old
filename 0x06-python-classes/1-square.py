@@ -2,10 +2,8 @@
 """Defining a class square """
 
 
-class square:
+class Square:
     """ class of square"""
     def __init__(self, size):
-        """ Initializing a square
-        class of argument
-        """
+        """ Initializing a square argument """
         self.__size = size
