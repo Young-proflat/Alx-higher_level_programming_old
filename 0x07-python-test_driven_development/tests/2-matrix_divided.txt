@@ -1,12 +1,12 @@
-====================
-This module accept matrix and return a rounded figure.
-====================
-How to use 2-matrix_divided.py
+ ====================
+ This module accept matrix and return a rounded figure.
+ ====================
+ How to use 2-matrix_divided.py
 
-using a function ``matrix_divided(matrix, div)``.
-==========
+ using a function ``matrix_divided(matrix, div)``.
+ ==========
 
-::
+ ::
 	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 	>>> matrix = [
 	...	[1, 2, 3],
@@ -18,23 +18,23 @@ using a function ``matrix_divided(matrix, div)``.
  It print out the output in rounded two decimal place.
 
 
-:: 
+ :: 
 
 	>>> matrix = []
 	>>> print(matrix_divided(matrix, 3))
 	Traceback (most recent call last):
 	TypeError: matrix must be a matrix (list of lists) of integer/float
 
-An empty list of matrix will raised a TypeError.
+ An empty list of matrix will raised a TypeError.
 
-::
+ ::
 
 	>>> print(matrix)
 	[[1, 2, 3], [4, 5, 6]]
 
  Matrix output remained unchanged
 
-:: 
+ :: 
 
 	>>> matrix = [
 	...	[2.1, 3.5, 4.2],
@@ -46,7 +46,7 @@ An empty list of matrix will raised a TypeError.
  Working with float-point number which is acceptable.
 
 
-:: 
+ :: 
 
 	>>> matrix = [
 	...	[2.1, 1, 3, 4],
@@ -62,7 +62,7 @@ An empty list of matrix will raised a TypeError.
  a TypeError would be raised.
 
 
-::
+ ::
 
  
 	>>> matrix = [
@@ -76,7 +76,7 @@ An empty list of matrix will raised a TypeError.
  The TypeError is displayed when a list contain an element that is not
  a integer/floats.
 
-::
+ ::
 
 
 	>>> matrix = [
@@ -90,13 +90,13 @@ An empty list of matrix will raised a TypeError.
 
 
  Invalid Divisors
-=================
+ =================
 
 
  The parameter ``div`` must be either an integer or float else a TypeError 
  is raised.
 
-::
+ ::
 
 	>>> matrix = [
 	... 	[1, 2, 5],
@@ -107,7 +107,7 @@ An empty list of matrix will raised a TypeError.
 	TypeError: div must be an integer/float
 
 
-::
+ ::
 
 
 	>>> print(matrix_divided(matrix, None))
@@ -117,7 +117,7 @@ An empty list of matrix will raised a TypeError.
 
  The parameter ``div `` must be a non-zero. Otherwise, a ZeroDivision is raised
 
-::
+ ::
 
 
 	>>> print(matrix_divided(matrix, 0))
