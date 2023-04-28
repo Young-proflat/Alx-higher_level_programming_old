@@ -1,10 +1,13 @@
- ====================
- This module accept matrix and return a rounded figure.
- ====================
+ ==============================
  How to use 2-matrix_divided.py
+ ==============================
+ This module defines a matrix division function ``matrix_divided(matrix, div)``.
 
- using a function ``matrix_divided(matrix, div)``.
- ==========
+ Usage
+ =====
+
+ ``matrix_divided`` returns a new matrix that is a copy of its parameter.
+ ``matrix`` with all element divided by ``div`` reuturns a rounded value with two decimal place.
 
  ::
 	>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
@@ -23,6 +26,7 @@
 	>>> matrix = []
 	>>> print(matrix_divided(matrix, 3))
 	Traceback (most recent call last):
+		...	
 	TypeError: matrix must be a matrix (list of lists) of integer/float
 
  An empty list of matrix will raised a TypeError.
@@ -54,6 +58,7 @@
 	... ]
 	>>> print(matrix_divided(matrix, 3))
 	Traceback (most recent call last):
+		...
 	TypeError: Each row of the matrix must have the same size 
 
 
@@ -71,6 +76,7 @@
 	... ]
 	>>> print(matrix_divided(matrix, 3))
 	Traceback (most recent call last):
+		...
 	TypeError: matrix must be a matrix (list of lists) integers/float.
 
  The TypeError is displayed when a list contain an element that is not
@@ -104,6 +110,7 @@
 	... ]
 	>>> print(matrix_divided(matrix, 'num'))
 	Traceback (most recent call last):
+		...
 	TypeError: div must be an integer/float
 
 
@@ -112,6 +119,7 @@
 
 	>>> print(matrix_divided(matrix, None))
 	Traceback (most recent call last):
+		...
 	TypeError: div must be an integer/float
 
 
@@ -122,4 +130,5 @@
 
 	>>> print(matrix_divided(matrix, 0))
 	Traceback (most recent call last):
+		...
 	ZeroDivisionError: division by zero 
