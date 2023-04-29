@@ -37,12 +37,20 @@ Traceback (most recent call last):
 ...
 TypeError: first_name must be a string
 
+>>> say_my_name("Abdul", None)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
 
 >>> say_my_name(None)
 Traceback (most recent call last):
 ...
 TypeError: first_name must be a string
 
+>>> say_my_name(, "eee")
+Traceback (most recent call last):
+...
+SyntaxError: invalid syntax
 
 Empty string
 >>> say_my_name()
