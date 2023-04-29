@@ -1,0 +1,51 @@
+============================
+This module print a statement
+============================
+
+It print ``first_name`` and ``last_name``, in
+a function ``say_my_name(first_name, last_name="")`` .
+
+
+Usage
+=====
+
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+	>>> say_my_name("John", "Smith")
+	My name is John Smith
+
+::
+
+If the first_name argument is an integer it raise a TypeError.
+
+	>>> say_my_name(12, "Ado")
+	Traceback (most recent last call):
+		...
+	TypeError: first_name must be a string
+
+
+
+:: 
+
+if the last_name argument is an integer the function raise a TypeError.
+
+	>>> say_my_name("lateef", 21)
+	Traceback (most recent last call):
+		...
+	TypeError: last_name must be a string
+
+
+::
+
+when a None argument for a first_name its raise a TypeError.
+	>>> say_my_name(None, "lekan")
+	Traceback (most recent last call):
+		...
+	TypeError: first_name must be a string
+
+
+::
+
+when a string is inputted as an argument.
+
+	>>> say_my_name("Ola")
+	My name is Ola
