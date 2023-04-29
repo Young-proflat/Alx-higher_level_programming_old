@@ -11,7 +11,7 @@ Usage
 
 >>> say_my_name = __import__('3-say_my_name').say_my_name
 >>> say_my_name("John", "Smith")
-My name is John Smith 
+My name is John Smith
 
 If the first_name argument is an integer it raise a TypeError.
 
