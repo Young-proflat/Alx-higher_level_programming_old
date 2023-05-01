@@ -43,9 +43,12 @@ Traceback (most recent call last):
 TypeError: print_square() missing 1 required positional argument: 'size'
 
 
-
 It accept positive integer if you input None it raise a TypeError
 >>> print_square(None)
 Traceback (most recent call last):
 ...
 TypeError: size must be an integer
+
+>>> print_square(0)
+
+
