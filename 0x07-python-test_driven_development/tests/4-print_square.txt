@@ -1,0 +1,51 @@
+===============================================
+This program print the square with the character
+===============================================
+
+Module: `` def print_square(size):,`` accept an integer.
+
+Usage:
+======
+
+>>> print_square = __import__('4-print_square').print_square
+
+It accept positive integer
+>>> print_square(4)
+####
+####
+####
+####
+
+
+>>> print_square(-1)
+Traceback (most recent call last):
+...
+ValueError: size must be >= 0
+
+
+>>> print_square(1.3)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+
+If string is entered it rasies a TypeError
+>>> print_square("school")
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
+
+
+If no argument is entered it raise a TypeError
+>>> print_square()
+Traceback (most recent call last):
+...
+TypeError: print_square() missing 1 required positional argument: 'size'
+
+
+
+It accept positive integer if you input None it raise a TypeError
+>>> print_square(None)
+Traceback (most recent call last):
+...
+TypeError: size must be an integer
