@@ -31,22 +31,20 @@ def matrix_mul(m_a, m_b):
                 raise TypeError('m_b must be a list of list')
             if not type(elem2) in (int, float):
                 raise TypeError('m_b should contain only integer/float')
-        if m_a == [] or [[]]:
+        if m_a == [] or m_a == [[]]:
             raise ValueError('m_a cant be empty')
         
-        if m_b == [] or [[]]:
+        if m_b == [] or m_b == [[]]:
             raise ValueError('m_b cant be empty')
         
-        rows = len(m_a)
-        for row in m_a:
-            if len(row) != rows:
-                raise TypeError('Each row of m_a must be of the same size')
-                
-        rows = len(m_b)
-        for row in m_b:
-            if len(row) != rows:
-                raise TypeError('Each row of m_b must be of the same size')
-                
+        if not all(len(row) == len(m_a[0]) for row in m_a):
+            raise TypeError("each row of m_a must should be of the same size")
+        if not all(len(row) == len(m_b[0]) for row in m_b):
+            raise TypeError("each row of m_b must should be of the same size")
+
+        if len(m_a[0]) != len(m_b):
+            raise ValueError('m_a and m_b cant be multiplied')
+
     inverted_b = []
     for r in range(len(m_b[0])):
         new_row = []
