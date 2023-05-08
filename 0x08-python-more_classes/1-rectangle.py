@@ -13,11 +13,13 @@
 """
 
 class Rectangle:
+    """Recatngle object with getter and setters
+    """
     def __init__(self,width = 0, height = 0):
         self.width = width
         self.height = height
 
-# width function 
+
     @property
     def width(self):
         return(self.__width)
@@ -30,7 +32,7 @@ class Rectangle:
             raise ValueError('width must be >= 0')
         self.__width = value
 
-#height function
+
     @property
     def height(self):
         return(self.__height)
