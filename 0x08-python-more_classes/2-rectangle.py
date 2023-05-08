@@ -3,6 +3,7 @@
 """ Creating an Area and Perimeter of a rectangle """
 class Rectangle:
     """ A class rectangle """
+
     def __init__(self, width= 0, height= 0):
         """ initializating the class """
         self.width = width
@@ -21,7 +22,7 @@ class Rectangle:
             raise ValueError('width must be >= 0')
         self.__width = value
 
-    """ Accept variable for height """
+    """ Get/set the height of the rectangle """
     @property
     def height(self):
         return self.__height
