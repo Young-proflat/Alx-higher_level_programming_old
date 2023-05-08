@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-""" This module print the dictionary format of a rectangle """
+""" Create a rectangle class """
+
 
 class Rectangle:
+    """Definition of class rectangle"""
     pass
