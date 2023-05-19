@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-""" Write a string to a text file(UTF8) """
+""" Appending a string to a text file """
 
 
-def write_file(filename="", text=""):
-    """ It returns the list of a string """
-    with open(filename, "a", encoding="utf-8") as file1:
+def append_write(filename="", text=""):
+    """ Append a string to a text file """ 
+    with open(filename, "a") as file1:
         return file1.write(text)
