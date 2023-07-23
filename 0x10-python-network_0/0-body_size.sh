@@ -1,4 +1,3 @@
 #!/bin/bash
-
-# Curl using bash script to response in size bytes
-curl -sI "$1" | grep 'Content-Length' | awk '{print $2}'
+# Get The body  size  from outgoing  request to url introduced as argument
+curl -sI "$1" | grep 'Content-Length:' | cut -c 17-
