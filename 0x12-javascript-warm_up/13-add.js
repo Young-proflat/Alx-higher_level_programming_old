@@ -1,4 +1,4 @@
-c
-rts.add = function add (a, b) {
+#!/usr/bin/node
+exports.add = function add (a, b) {
     return a + b;
 };
